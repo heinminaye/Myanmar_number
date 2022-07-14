@@ -81,18 +81,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         setState(() {
                           if (_numOne == _numFive) {
                             radomNumber();
-                            const snackBar = SnackBar(
-                              duration: Duration(milliseconds: 700),
-                              content: Text('Yay! You win'),
-                            );
-                            ScaffoldMessenger.of(context)
-                                .showSnackBar(snackBar);
                           } else {
                             radomNumber();
                             const snackBar = SnackBar(
                               duration: Duration(milliseconds: 700),
                               content: Text(
-                                'Sry! You Lose',
+                                'Wrong Number!',
                               ),
                             );
                             ScaffoldMessenger.of(context)
@@ -116,16 +110,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         if (_numTwo == _numFive) {
                           radomNumber();
-                          const snackBar = SnackBar(
-                            duration: Duration(milliseconds: 700),
-                            content: Text('Yay! You Win'),
-                          );
-                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         } else {
                           radomNumber();
                           const snackBar = SnackBar(
                             duration: Duration(milliseconds: 700),
-                            content: Text('Sry! You Lose'),
+                            content: Text('Wrong Number!'),
                           );
                           ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         }
@@ -152,16 +141,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         if (_numThree == _numFive) {
                           radomNumber();
-                          const snackBar = SnackBar(
-                            duration: Duration(milliseconds: 400),
-                            content: Text('Yay! You Win'),
-                          );
-                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         } else {
                           radomNumber();
                           const snackBar = SnackBar(
                             duration: Duration(milliseconds: 400),
-                            content: Text('Sry! You Lose'),
+                            content: Text('Wrong Number!'),
                           );
                           ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         }
@@ -182,16 +166,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         if (_numFour == _numFive) {
                           radomNumber();
-                          const snackBar = SnackBar(
-                            duration: Duration(milliseconds: 400),
-                            content: Text('Yay! You Win'),
-                          );
-                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         } else {
                           radomNumber();
                           const snackBar = SnackBar(
                             duration: Duration(milliseconds: 400),
-                            content: Text('Sry! You Lose'),
+                            content: Text('Wrong Number!Choose again again'),
                           );
                           ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         }
