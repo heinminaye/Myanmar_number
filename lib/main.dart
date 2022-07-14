@@ -170,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           radomNumber();
                           const snackBar = SnackBar(
                             duration: Duration(milliseconds: 400),
-                            content: Text('Wrong Number!Choose again again'),
+                            content: Text('Wrong Number!'),
                           );
                           ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         }
